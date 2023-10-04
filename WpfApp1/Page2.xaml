@@ -1,0 +1,156 @@
+﻿<Page x:Class="WpfApp1.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Page2">
+
+    <Grid Background="#FFE5EFF8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Background="#E5EFF8">
+            <Image Source=".\img\Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" Width="570" Height="570" Margin="100, 180"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Background="White" Grid.ColumnSpan="2">
+            <StackPanel Margin="150, 100">
+                <TextBlock
+                 Margin="0,0,0,50"
+                 Text="Create your Account"
+                 HorizontalAlignment="Center" FontSize="26" FontWeight="Bold"
+                 
+                 />
+                <TextBlock FontFamily="/font/Poppins-Black.ttf"
+                    Text="Name"
+                    FontSize="20" Foreground="#FF7C838A"
+                    Margin="0,0,0,10"
+                    />
+                <TextBox Style="{DynamicResource TextBoxStyle1}"  Height="60"
+                    Margin="0,0,0, 60"
+                    Background="#FFDEE3E7"
+                    Text="Enter your name here"
+                    Padding="15"
+                    FontSize="20"
+                    Foreground="Gray"
+                    FontFamily="/font/Poppins-Black.ttf"
+                    />
+                <TextBlock FontFamily="/font/Poppins-Black.ttf"
+                 Text="Email"
+                 FontSize="20" Foreground="#FF7C838A"
+                 Margin="0,0,0,10"
+                 />
+                <TextBox Style="{DynamicResource TextBoxStyle1}"  Height="60"
+                 Margin="0,0,0, 30"
+                 Background="#FFDEE3E7"
+                      Text="Enter your Email here"
+                      Padding="15"
+                      FontSize="20"
+                      Foreground="Gray"
+                      FontFamily="/font/Poppins-Black.ttf"
+                 />
+
+                <TextBlock FontFamily="/font/Poppins-Black.ttf"
+                 Text="Password"
+                  FontSize="20" Foreground="#FF7C838A"
+                 Margin="0,0,0,10"
+                 />
+                <TextBox Style="{DynamicResource TextBoxStyle2}"  Height="60"
+                    Background="#FFDEE3E7"  
+                      Text="Enter your Password here"
+                       Padding="15"
+                         FontSize="20"
+                      Foreground="Gray"
+                      FontFamily="/font/Poppins-Black.ttf"
+                 
+                 />
+
+                <StackPanel Orientation="Horizontal"  Margin="25">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" HorizontalAlignment="Left">
+                            <TextBlock
+                        Text="Age"
+                        Padding="15"
+                        FontSize="20"
+                        Foreground="Gray"
+                        FontFamily="/font/Poppins-Black.ttf"
+                                Width="100"
+                        />
+                            <TextBox
+                        Style="{DynamicResource TextBoxStyle2}"  Height="60"
+                    Background="#FFDEE3E7"  
+                      Text="18"
+                       Padding="15"
+                         FontSize="20"
+                      Foreground="Gray"
+                      FontFamily="/font/Poppins-Black.ttf"
+                        />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Right">
+                            <TextBlock
+                                Margin="200 0 0 0"
+                                Text="Gender"
+                                Padding ="15"
+                                FontSize="20"
+                                Foreground="Gray"
+                                FontFamily="/font/Poppins-Black.ttf"
+                                />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="200 0 0 0">
+
+                                <CheckBox  Grid.Row="1" Content="Male" Style="{StaticResource CircleCheckbox}"  Foreground="Gray"
+                                    FontSize="20"
+                                        FontFamily="/font/Poppins-Black.ttf">
+                                </CheckBox>
+                                <CheckBox  Grid.Row="1" Content="Female" Style="{StaticResource CircleCheckbox}" Margin="25 0 0 0"
+                                           Foreground="Gray"
+                                           FontSize="20"
+                                           FontFamily="/font/Poppins-Black.ttf">
+                                </CheckBox>
+                               
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+                <Button Style="{DynamicResource ButtonStyle1}"
+                 Margin="0,30,0,30"
+                 Content="Login Here"
+                 Height="60" Click="Button_Click"
+                     FontSize="26"
+                     FontWeight="Bold"
+                 
+                 />
+                <TextBlock FontFamily="/font/Poppins-Black.ttf"
+                 HorizontalAlignment="Center"
+                 Text="- OR -"
+                 Margin="0,0,0,32"
+                 FontSize="26"
+                 />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15">
+                    <TextBlock FontFamily="/font/Poppins-Black.ttf"
+                 Text="Already have an account?"
+                  FontSize="20"
+                  VerticalAlignment="Bottom" 
+                            />
+                    <Button Style="{DynamicResource ButtonStyle2}"
+                     Margin="15, 0"
+                     
+                     Content="Login"
+
+                     Foreground="#6EB6FF"
+                         FontSize="18"
+                     />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+
+    </Grid>
+</Page>

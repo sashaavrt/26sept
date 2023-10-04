@@ -67,8 +67,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page2.xaml.cs">
+      <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -86,6 +100,24 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="font\Poppins-Black.ttf" />
+    <Resource Include="font\Poppins-BlackItalic.ttf" />
+    <Resource Include="font\Poppins-Bold.ttf" />
+    <Resource Include="font\Poppins-BoldItalic.ttf" />
+    <Resource Include="font\Poppins-ExtraBold.ttf" />
+    <Resource Include="font\Poppins-ExtraBoldItalic.ttf" />
+    <Resource Include="font\Poppins-ExtraLight.ttf" />
+    <Resource Include="font\Poppins-ExtraLightItalic.ttf" />
+    <Resource Include="font\Poppins-Italic.ttf" />
+    <Resource Include="font\Poppins-Light.ttf" />
+    <Resource Include="font\Poppins-LightItalic.ttf" />
+    <Resource Include="font\Poppins-Medium.ttf" />
+    <Resource Include="font\Poppins-MediumItalic.ttf" />
+    <Resource Include="font\Poppins-Regular.ttf" />
+    <Resource Include="font\Poppins-SemiBold.ttf" />
+    <Resource Include="font\Poppins-SemiBoldItalic.ttf" />
+    <Resource Include="font\Poppins-Thin.ttf" />
+    <Resource Include="font\Poppins-ThinItalic.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\Login page img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="font\OFL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
